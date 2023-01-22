@@ -1,3 +1,4 @@
+clear
 echo "Bắt đầu chạy Bitcoin Bot..."
 sleep 3
 for (( c=1; c<=1000000000000; c++ ))
