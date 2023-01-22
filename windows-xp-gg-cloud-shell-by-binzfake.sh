@@ -42,10 +42,6 @@ echo "==================="
 echo ""
 echo "VPS usage time: 12H"
 echo "Press Cirl + C to turn off your VPS"
-echo "sleep 43000"
-clear
-echo "Time limit reached, so vps will stop working!"
-echo "Bye bye!"
 sudo qemu-system-x86_64 \
   -m 8G \
   -cpu EPYC \
