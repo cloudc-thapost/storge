@@ -7,6 +7,7 @@ nohup ./ngrok tcp 5900 &>/dev/null &
 
 
 clear
+echo "Starting script..."
 echo "Script by BZOT9 TEAM"
 echo "Updating System..."
 sudo apt-get update -y
@@ -23,15 +24,28 @@ clear
 echo "Set up VNC address..."
 sleep 5
 clear
-echo "Use VNC Viewer to connect."
-echo "Your Address VNC (Password login: binzfakevps) is:"
-curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
+echo "Windows login information"
+echo "Username: binzfake-vps"
+echo "Password: binzfakevps"
 echo "==================="
-echo "YT: youtube.com/@binzfake2500"
-echo "Website: binzfake9999.github.io"
-echo "Website: binzfake9999.github.io"
+echo ""
+echo "Use VNC Viewer to connect."
+echo "Your Address VNC is:"
+curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
+echo ""
+echo "Hmm, error? pls Contact us via our email!"
+echo ""
+echo "==Information=="
+echo "YT: youtube.com/@bzot9steve"
 echo "Email: bzot9ws@gmail.com"
 echo "==================="
+echo ""
+echo "VPS usage time: 12H"
+echo "Press Cirl + C to turn off your VPS"
+echo "sleep 43000"
+clear
+echo "Time limit reached, so vps will stop working!"
+echo "Bye bye!"
 sudo qemu-system-x86_64 \
   -m 8G \
   -cpu EPYC \
