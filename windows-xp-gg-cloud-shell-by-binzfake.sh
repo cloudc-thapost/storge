@@ -44,5 +44,5 @@ sudo qemu-system-x86_64 \
   -cpu coreduo \
   -smp sockets=1,cores=4,threads=1 \
   -vga std \
-  -device e1000,netdev=n0 -netdev user,id=n0,dns=1.1.1.1 \
+  -device e1000,netdev=n0 -netdev user,id=n0 \
   -accel tcg,thread=multi \
